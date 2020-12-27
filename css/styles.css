@@ -77,27 +77,25 @@ input[type="text"]{
 
 .contenedor-left{
      width: 78%;
-     height: 95%;
-     /*background-color: blue;*/
+     height: 98%;
 }
 
 button.contenedor_fondo{
      cursor: pointer;
      outline: none;
      border:none;
+     transition: box-shadow 3s;
 }
 
 .operadores-arriba{
      display: flex;
      height: 20%;
      justify-content: space-between;
-     /*border: 1px solid white;*/
 }
 
 .contenedor-right{
-     /*background-color: red;*/
      width: 25%;
-     height: 95%;
+     height: 98%;
      display: flex;
      flex-direction: column;
 
@@ -112,12 +110,17 @@ button.contenedor_fondo{
      width: 100%;
      height: 60%;
      overflow: hidden;
-     /*background-color: green;*/  
+
 }
 
 button:hover, button:nth-child(3):hover{
      background-color: #D24C5B;
      border: 2px solid #da3246;
+}
+
+button:active, button:nth-child(3):active{
+     background-color: #da3246;
+     box-shadow: inset 4px 4px 6px rgba(0, 0, 0, 0.25);
 }
 
 #numeros{
@@ -132,9 +135,9 @@ button:hover, button:nth-child(3):hover{
      height: 20%;
      width: 100%;
      justify-content: space-between;
-     /*background-color: yellow;*/
 }
 
 .contenedor-bottom button:nth-child(1){
      width: 130px;
 }
+
