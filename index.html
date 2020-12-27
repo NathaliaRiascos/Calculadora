@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <link rel="stylesheet" href="css/normalize.css">
+     <link rel="stylesheet" href="css/styles.css">    
+     <title>Cálculadora</title>
+</head>
+<body>
+    
+     <div class="contenedor_principal">
+          <div class="contenedor_fondo contenedor-resultado">
+               <input type="text" value="2*3">
+               <p>6</p>
+          </div>
+          <div class="contenedor_teclas">
+               <div class="contenedor-left">
+                    <div class="operadores-arriba">            
+                         <button class="contenedor_fondo">C</button>
+                         <button class="contenedor_fondo">/</button>
+                         <button class="contenedor_fondo">*</button>                   
+                    </div>
+                    <div class="contenedor-numeros">
+                         <div id="numeros"></div>
+                    </div>
+                    <div class="contenedor-bottom">
+                         <button class="contenedor_fondo">0</button>
+                         <button class="contenedor_fondo">.</button>
+                    </div>
+               </div>
+               <div class="contenedor-right">
+                    <button class="contenedor_fondo">+</button>
+                    <button class="contenedor_fondo">-</button>
+                    <button class="contenedor_fondo">=</button> 
+               </div>
+          </div>
+
+     </div>
+
+     <script src="app.js"></script>
+</body>
+</html>
